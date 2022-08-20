@@ -27,9 +27,9 @@
 </details>
 
 <!-- ABOUT THE PROJECT -->
-# To-Do-List
+# Testing Practices
 
-A tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. This project incorporates a simple HTML list of To Do tasks. The list will be styled according to the specifications listed. This simple web page will be built using webpack and served by a webpack dev server.
+This repo includes functions and tests for those functions by following the AAA-test practices. The JavaScript testing is done with a jest framework.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -40,21 +40,22 @@ A tool that helps to organize your day. It simply lists the things that you need
 ### Built With
 
 - HTML, CSS, Javascript
-- No frameworks used
+- No frameworks used (For styling like bootstrap, React, ...)
 - Github
 - Webpack
+- Jest (test framework)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Live Demo
 
-- Click [here](https://debbymiressa.github.io/To-Do-List/) to get started with a live demo
+- No live demo
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
 **Instructions on how to access my project locally:** 
-- Enter this url: [https://github.com/DebbyMiressa/To-Do-List](https://github.com/DebbyMiressa/To-Do-List) in your web browser.
+- Enter this url: [https://github.com/DebbyMiressa/Testing-Practices](https://github.com/DebbyMiressa/Testing-Practices) in your web browser.
 - Clone it to your local machine.
 - Once the download is complete you will be able to access my project locally . 
 
@@ -66,6 +67,7 @@ If you need to run my project locally follow the steps below :
 * Have node installed.
 * Have npm package manager Installed.
 * Have webpack installed. (module bundler)
+* Have jest installed. (Testing Framework)
 * Have CSS,HTML & JS Linters installed and configured. For further information, visit [this link](https://github.com/microverseinc/linters-config/blob/master/README.md) to get better understanding on each linters used on this project.
 * Properly use ES6 Syntax and ES6 Modules throughout the project.
 
@@ -75,15 +77,16 @@ If you need to run my project locally follow the steps below :
 ```sh
 npm init -y
 ```
-2. Install Webpack, Required plugin(s) and Style/CSS Loader
+2. Install Webpack, Required plugin(s), Style/CSS Loader and Webpack-dev-server
 ```sh
 npm install webpack webpack-cli --save-dev
 npm install --save-dev html-webpack-plugin
 npm install --save-dev style-loader css-loader
-```
-3. Install Webpack-dev-server and start running build
-```sh
 npm install --save-dev webpack-dev-server
+```
+3. Start running build
+```sh
+npm build run
 npm start
 ```
 
